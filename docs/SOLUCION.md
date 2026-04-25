@@ -93,8 +93,7 @@ Template Method (parcial) — Pelicula define la estructura fija de toda pelícu
 
 # RESULTADOS DESPUÉS DE LOS 2 PROMPTS
 
-![MAIN](image.png)
-
+![EJEMPLO](image-1.png)
 Después de los 2 prompts y de la generación de 8 clases, se resuelve exitosamente el problema. 
 
 ---
