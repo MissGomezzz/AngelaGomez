@@ -1,4 +1,4 @@
-# Autora: Ángela Gómez
+# Autora: Ángela Gómez - Solución generada con Claude
 
 # ACTIVIDAD GENERACIÓN DE SOLUCIONES CON IA GENERATIVA
 
@@ -89,11 +89,21 @@ Template Method (parcial) — Pelicula define la estructura fija de toda pelícu
 
 # PRINCIPIOS SOLID
 
+### Principios SOLID
 
+| Principio | Cómo se aplica |
+|---|---|
+| **S** – Single Responsibility | `Pelicula` gestiona datos de película; `MembresiaStrategy` gestiona descuentos; `SistemaAlquiler` orquesta el flujo. Cada clase tiene una sola razón para cambiar. |
+| **O** – Open/Closed | Para agregar una membresía "VIP" se crea una subclase de `MembresiaStrategy`. No se toca ningún código existente. |
+| **L** – Liskov Substitution | `PeliculaFisica` y `PeliculaDigital` son intercambiables en cualquier lugar donde se espere una `Pelicula`. |
+| **I** – Interface Segregation | `MembresiaStrategy` expone solo `aplicarDescuento()` y `nombre()`. Sus clientes no conocen nada más. |
+| **D** – Dependency Inversion | `SistemaAlquiler` depende de `Pelicula` y `MembresiaStrategy` (abstracciones), nunca de `PeliculaFisica` o `MembresiaPremium` directamente. |
 
 # RESULTADOS DESPUÉS DE LOS 2 PROMPTS
 
 ![EJEMPLO](image-1.png)
+
+
 Después de los 2 prompts y de la generación de 8 clases, se resuelve exitosamente el problema. 
 
 ---
